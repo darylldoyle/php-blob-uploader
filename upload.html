@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Uploader</title>
+</head>
+
+<body>
+<!-- This is the embedding of the java applet -->
+<!-- The parameter uc_maxFileLength sets the maximum file size. I have this set at 1MB currently. -->
+<!-- The parameter uc_fileNamePattern sets the allowed file types. -->
+<applet id="jumpLoaderApplet" name="jumpLoaderApplet"
+	code="jmaster.jumploader.app.JumpLoaderApplet.class"
+	archive="jumploader_z_2.19.0.jar"
+	width="715"
+	height="500"
+	mayscript>
+    	<param name="uc_imageEditorEnabled" value="false"/>
+		<param name="uc_uploadUrl" value="blob_test.php"/>
+		<param name="uc_maxFileLength" value="1048576"/>
+        <param name="vc_lookAndFeel" value="system"/>
+        <param name="uc_fileNamePattern" value="^.+\.((jpg)|(jpe)|(jpeg)|(JPG)|(JPE)|(JPEG)|(gif)|(GIF)|(png)|(PNG))$"/>
+</applet>
+</body>
+</html>
